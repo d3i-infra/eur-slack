@@ -54,13 +54,7 @@ export const DonationPage = (props: Props): JSX.Element => {
 
   function renderFooter (props: Props): JSX.Element | undefined {
     if (props.footer != null) {
-      return <Footer
-      right={
-        <div className='flex flex-row'>
-          <div className='flex-grow' />
-          <ForwardButton label={forwardButton} onClick={handleSkip} />
-        </div>
-      } />
+      return <Footer />
     } else {
       return undefined
     }
